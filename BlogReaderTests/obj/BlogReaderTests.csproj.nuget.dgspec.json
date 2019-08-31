@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "restore": {
+    "B:\\GitHub\\BlogReader\\BlogReaderTests\\BlogReaderTests.csproj": {}
+  },
+  "projects": {
+    "B:\\GitHub\\BlogReader\\BlogReaderTests\\BlogReaderTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "B:\\GitHub\\BlogReader\\BlogReaderTests\\BlogReaderTests.csproj",
+        "projectName": "BlogReaderTests",
+        "projectPath": "B:\\GitHub\\BlogReader\\BlogReaderTests\\BlogReaderTests.csproj",
+        "packagesPath": "C:\\Users\\Linkmaster\\.nuget\\packages\\",
+        "outputPath": "B:\\GitHub\\BlogReader\\BlogReaderTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Linkmaster\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://emmersionlearning.pkgs.visualstudio.com/_packaging/EmmersionPackages/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "B:\\GitHub\\BlogReader\\BlogReader\\BlogReader.csproj": {
+                "projectPath": "B:\\GitHub\\BlogReader\\BlogReader\\BlogReader.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.9.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            },
+            "System.ServiceModel.Primitives": {
+              "target": "Package",
+              "version": "[4.6.0-preview8.final, )"
+            },
+            "System.ServiceModel.Syndication": {
+              "target": "Package",
+              "version": "[4.6.0-preview8.19405.3, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.11.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "B:\\GitHub\\BlogReader\\BlogReader\\BlogReader.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "B:\\GitHub\\BlogReader\\BlogReader\\BlogReader.csproj",
+        "projectName": "BlogReader",
+        "projectPath": "B:\\GitHub\\BlogReader\\BlogReader\\BlogReader.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}
