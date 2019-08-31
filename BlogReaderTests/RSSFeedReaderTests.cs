@@ -3,6 +3,7 @@ using BlogReader;
 using System.ServiceModel.Syndication;
 using System.Collections.Generic;
 using System.Linq;
+using BlogReader.models;
 
 namespace BlogReaderTests
 {
@@ -13,11 +14,16 @@ namespace BlogReaderTests
         {
             var reader = new RSSFeedReader();
             string url = "https://martinfowler.com/feed.atom";
-            SyndicationFeed feed = reader.GetFeedData(url);
-            
+            List<BlogItemModel> feed = reader.GetFeedData(url);
+
+            BlogItemModel item = feed.FirstOrDefault();
+
             Assert.That(feed != null);
-            Assert.That(feed.Description.Text != null);
-            Assert.That(feed.Links.Count > 0);          
+            Assert.That(item.Description != null);
+            Assert.That(item.Title != null);
+            Assert.That(item.Author != null);
+            Assert.That(item.Link != null);
+            Assert.That(item.Updated != null);
         }
 
         [Test]
@@ -25,13 +31,27 @@ namespace BlogReaderTests
         {
             var reader = new RSSFeedReader();
             var urls = new List<string>() { "https://martinfowler.com/feed.atom", "https://www.codingblocks.net/podcast-feed.xml" };
-            List<SyndicationItem> items = new List<SyndicationItem>();
+            List<BlogItemModel> items = new List<BlogItemModel>();
             urls.ForEach(url =>
             {
-               items.AddRange(reader.GetFeedData(url).Items.ToList<SyndicationItem>());
+               items.AddRange(reader.GetFeedData(url));
             });
 
             Assert.That(items.Count > 0);
+        }
+
+        [Test]
+        public void When_getting_trying_to_use_non_feed_url()
+        {
+            var reader = new RSSFeedReader();
+            var urls = new List<string>() { "https://emmersionlearning.com" };
+            List<BlogItemModel> items = new List<BlogItemModel>();
+            urls.ForEach(url =>
+            {
+                items.AddRange(reader.GetFeedData(url));
+            });
+
+            Assert.That(items.Count == 0);
         }
     }
 }

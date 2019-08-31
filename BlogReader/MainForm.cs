@@ -1,12 +1,6 @@
 ﻿using BlogReader.models;
-using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ServiceModel.Syndication;
 using System.Windows.Forms;
 
 namespace BlogReader
@@ -14,17 +8,28 @@ namespace BlogReader
     public partial class MainForm : Form
     {
         private List<BlogListEntry> blogs = new List<BlogListEntry>();
-
+        private List<BlogItemModel> items = new List<BlogItemModel>();
         public MainForm()
         {
-            InitializeComponent();
             LoadBlogList();
+            GetFeedData();
+            InitializeComponent();
+
         }
         
         private void LoadBlogList()
         {
             BlogListReader reader = new BlogListReader();
             blogs = reader.LoadBlogList();
+        }
+
+        private void GetFeedData()
+        {
+            var feedReader = new RSSFeedReader();
+            blogs.ForEach(x =>
+            {
+                items.AddRange(feedReader.GetFeedData(x.Url));
+            });
         }
     }
 }
