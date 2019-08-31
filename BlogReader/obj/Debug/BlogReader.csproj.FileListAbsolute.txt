@@ -1,0 +1,12 @@
+B:\GitHub\BlogReader\BlogReader\bin\Debug\BlogReader.exe.config
+B:\GitHub\BlogReader\BlogReader\bin\Debug\BlogReader.exe
+B:\GitHub\BlogReader\BlogReader\bin\Debug\BlogReader.pdb
+B:\GitHub\BlogReader\BlogReader\bin\Debug\System.ServiceModel.Syndication.dll
+B:\GitHub\BlogReader\BlogReader\bin\Debug\System.ServiceModel.Syndication.xml
+B:\GitHub\BlogReader\BlogReader\obj\Debug\BlogReader.csprojAssemblyReference.cache
+B:\GitHub\BlogReader\BlogReader\obj\Debug\BlogReader.Properties.Resources.resources
+B:\GitHub\BlogReader\BlogReader\obj\Debug\BlogReader.csproj.GenerateResource.cache
+B:\GitHub\BlogReader\BlogReader\obj\Debug\BlogReader.csproj.CoreCompileInputs.cache
+B:\GitHub\BlogReader\BlogReader\obj\Debug\BlogReader.csproj.CopyComplete
+B:\GitHub\BlogReader\BlogReader\obj\Debug\BlogReader.exe
+B:\GitHub\BlogReader\BlogReader\obj\Debug\BlogReader.pdb

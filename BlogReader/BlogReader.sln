@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogReader", "BlogReader.csproj", "{7FD990BE-0B82-4D5B-99DA-7CEABD937018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogReaderTests", "..\BlogReaderTests\BlogReaderTests.csproj", "{FF23CF5C-1FC2-44B2-947C-BC1DC9DBB4FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FD990BE-0B82-4D5B-99DA-7CEABD937018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD990BE-0B82-4D5B-99DA-7CEABD937018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD990BE-0B82-4D5B-99DA-7CEABD937018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD990BE-0B82-4D5B-99DA-7CEABD937018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF23CF5C-1FC2-44B2-947C-BC1DC9DBB4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF23CF5C-1FC2-44B2-947C-BC1DC9DBB4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF23CF5C-1FC2-44B2-947C-BC1DC9DBB4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF23CF5C-1FC2-44B2-947C-BC1DC9DBB4FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA84C536-231D-4639-BA04-9F2F7359B70E}
+	EndGlobalSection
+EndGlobal
