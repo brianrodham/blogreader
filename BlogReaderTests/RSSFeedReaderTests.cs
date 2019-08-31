@@ -4,7 +4,7 @@ using System.ServiceModel.Syndication;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Tests
+namespace BlogReaderTests
 {
     public class RSSFeedReaderTests
     {
