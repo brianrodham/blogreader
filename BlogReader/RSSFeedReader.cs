@@ -33,7 +33,6 @@ namespace BlogReader
                     {
                         Title = item.Title.Text,
                         Author = authors,
-                        Description = (item.Summary != null) ? item.Summary.Text : "",
                         Link = item.Links[0].Uri.ToString(),
                         Updated = GetDate(item)
                     });
@@ -52,7 +51,7 @@ namespace BlogReader
             if (DateTimeOffset.Compare(item.PublishDate, item.LastUpdatedTime) <= 0) {
                 return item.LastUpdatedTime.ToString();
             }
-        return item.LastUpdatedTime.ToString();
+            return item.PublishDate.ToString();
         }
     }
 }

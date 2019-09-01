@@ -1,7 +1,7 @@
 ﻿using BlogReader.models;
 using System.Collections.Generic;
-using System.ServiceModel.Syndication;
 using System.Windows.Forms;
+using System;
 
 namespace BlogReader
 {
@@ -26,9 +26,11 @@ namespace BlogReader
         private void GetFeedData()
         {
             var feedReader = new RSSFeedReader();
-            blogs.ForEach(x =>
+            blogs.ForEach(blog =>
             {
-                items.AddRange(feedReader.GetFeedData(x.Url));
+                items.AddRange(feedReader.GetFeedData(blog.Url));
+                items.Sort((x, y) => DateTime.Compare(DateTime.Parse(x.Updated), DateTime.Parse(y.Updated)));
+                items.Reverse();
             });
         }
     }
